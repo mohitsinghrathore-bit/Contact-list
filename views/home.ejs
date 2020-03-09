@@ -1,0 +1,36 @@
+<html>
+    <head>
+            <script src="https://kit.fontawesome.com/79632854ed.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="/css/home.css">
+    </head>
+        <body>
+            <h1 id="page-heading">
+            <i class="fas fa-address-book"></i>
+                My contact List</h1>
+                <div id="contact-list">
+
+                <% for(let i of contact_list){%>
+                 <div id="contact-detail">
+                    <div class="hey"><%= i.name %></div>
+                   <div class="hey"><%= i.phone %></div>
+                   <div id="delete-button">
+                        <a href="/dltcon/?id=<%=i._id%>">
+                        <i class="fas fa-window-close"></i>
+                        </a>
+                    </div>
+    
+                 </div>
+                
+                   <%}%>
+                </div> 
+
+            <form action="/create-contact" method="POST" id="name-phone">
+             <input name="name" type="text" required placeholder="Name" >
+             <input  type ="number" name="phone" required placeholder="Phone">
+             <button type="submit" id="add">Add</button>
+            </form>
+            <form action="/delete" method="POST">  
+                <button type="submit" id="delete">Delete</button>
+            </form>
+        </body>
+</html>

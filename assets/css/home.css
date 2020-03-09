@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+}
+#page-heading{
+    font-style: sans-serif;
+    text-align: center;
+}
+.hey {
+     word-spacing: 0.4rem;
+    font-style: sans-serif;
+    color: wheat;
+    width: 10rem;
+    height: 1.6rem;
+    font-size: 1.5rem;
+    padding: 4px;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+#contact-list{
+    margin-left: 40%;
+    display: flex;
+    flex-direction: column;
+    width:20rem;
+}
+#contact-detail:hover{
+    background-color: black;
+    color: white;
+}
+#name-phone{
+    margin-left: 40%;
+    margin-top: 2px;
+    
+}
+#name-phone input{
+    all: none;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 3px;
+    border-color: rgb(147, 154, 156);
+     width: 10rem;
+}
+#add,#delete{
+   background-color: black;
+   color: white;
+   border: 0px;
+   border-bottom-width: 12px;
+   font-size: 1rem; 
+}
+#contact-detail{
+    background-color: blue;
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+#delete-button{
+ padding: 3px;
+ margin-top: 6px;
+ text-align: center;
+}
